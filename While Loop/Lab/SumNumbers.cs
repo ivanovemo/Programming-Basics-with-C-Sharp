@@ -1,23 +1,20 @@
-﻿using System;
+using System;
 
-namespace MaxNumber
+namespace SumNumbers
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            int maxNumber = int.MinValue;
-            string command;
+            int num = int.Parse(Console.ReadLine());
 
-            while ((command = Console.ReadLine()) != "Stop")
+            int sum = 0;
+            while(sum < num)
             {
-                int number = int.Parse(command);
-                if (number > maxNumber)
-                {
-                    maxNumber = number;
-                }
+                int currentNumbers = int.Parse(Console.ReadLine());
+                sum += currentNumbers;
             }
-            Console.WriteLine(maxNumber);
+            Console.WriteLine(sum);
         }
     }
 }
