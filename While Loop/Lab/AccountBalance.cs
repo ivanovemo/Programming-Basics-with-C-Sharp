@@ -21,6 +21,5 @@ namespace AccountBalance
             }
             Console.WriteLine($"Total: {totalMoney:f2}");
         }
-        }
     }
 }
